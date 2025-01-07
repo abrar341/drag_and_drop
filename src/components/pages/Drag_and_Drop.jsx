@@ -89,7 +89,7 @@ const Drag_and_Drop = () => {
     };
 
     return (
-        <div className="flex flex-col md:flex-row gap-4 p-4 mt-5 min-w-[350px] w-1/2 mx-auto border-2 border-gray-500 rounded-2xl">
+        <div className="flex flex-col md:flex-row gap-4 p-4 mt-5 w-full md:w-1/2 mx-auto border-2 border-gray-500 rounded-2xl">
             {Object.entries(columns).map(([columnName, sections]) => (
                 <div key={columnName} className="flex flex-col w-full">
                     <h2 className="font-bold px-2 py-2">{formatName(columnName)}</h2>
